@@ -52,7 +52,7 @@ def train_cv():
         model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint, token=hf_token).to(device)
 
         args = Seq2SeqTrainingArguments(
-            output_dir=f"./models/spa2mslg_results/spa2mslg_fold_{fold}",
+            output_dir=f"./models/spa2mslg_results/final_model_fold_{fold}",
             eval_strategy="epoch",
             learning_rate=3e-5,
             per_device_train_batch_size=2,
@@ -77,7 +77,7 @@ def train_cv():
         )
 
         trainer.train()
-        trainer.save_model(f"./models/spa2mslg_results/spa2mslg_fold_{fold}")
+        trainer.save_model(f"./models/spa2mslg_results/final_model_fold_{fold}")
         print(f"Fold {fold+1} guardado.")
 
 if __name__ == "__main__":
