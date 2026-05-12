@@ -70,18 +70,18 @@ def run_ensemble_inference(base_model_dir, input_path, output_path):
 
 if __name__ == "__main__":
     # Tarea: Glosa a Español
-   # run_ensemble_inference(
-    #    "models/mslg2spa_final", 
-     #   "data/raw/MSLG2SPA_test.txt", 
-      #  "submissions/mslg2spa_predicciones.txt"
-    #)
+    run_ensemble_inference(
+        "models/mslg2spa_final", 
+        "data/raw/MSLG2SPA_test.txt", 
+        "submissions/mslg2spa_predicciones.txt"
+    )
     
     # Tarea: Español a Glosa
-   # run_ensemble_inference(
-    #    "models/spa2mslg_final", 
-     #   "data/raw/SPA2MSLG_test.txt", 
-      #  "submissions/spa2mslg_predicciones.txt"
-   # )
+    run_ensemble_inference(
+        "models/spa2mslg_final", 
+        "data/raw/SPA2MSLG_test.txt", 
+        "submissions/spa2mslg_predicciones.txt"
+    )
     #Para validación
     run_ensemble_inference(
         "models/mslg2spa_final", 

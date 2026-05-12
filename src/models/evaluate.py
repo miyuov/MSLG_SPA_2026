@@ -15,8 +15,8 @@ def calculate_metrics(preds_path, refs_path):
     print(f"Detalles: {bleu.precisions}")
 
 if __name__ == "__main__":
-  #  calculate_metrics("submissions/mslg2spa_predicciones.txt", "data/processed/referencias_spa.txt")
-   # calculate_metrics("submissions/spa2mslg_predicciones.txt", "data/processed/referencias_mslg.txt")
+    calculate_metrics("submissions/mslg2spa_predicciones.txt", "data/processed/referencias_spa.txt")
+    calculate_metrics("submissions/spa2mslg_predicciones.txt", "data/processed/referencias_mslg.txt")
     calculate_metrics("submissions/spa2mslg_train_eval_predicciones.txt", "data/processed/referencias_mslg.txt")
     calculate_metrics("submissions/mslg2spa_train_eval_predicciones.txt", "data/processed/referencias_spa.txt")
     
